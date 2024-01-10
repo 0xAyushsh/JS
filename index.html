@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .section.main .div .span-one + #para {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main section">
+      <a onclick="clickHandle(e)" href="https://google.com">open Link </a>
+      <span style="display: none"> Message - how to work</span>
+      <script type="text/javascript">
+        function clickHandle(e) {
+          console.log('one');
+          console.log(e);
+          e.preventDefault;
+          const span = document.getElementsByTagName('span');
+          span.display = 'inline';
+          return false;
+        }
+      </script>
+    </div>
+    <script src="stack.js"></script>
+  </body>
+</html>
